@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a80cb970b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:400&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="assets/2.jpg" type="img/x-icon">
+    <title>Drogaria Gabriela</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo"><img src="assets/2.jpg"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="medicamentos.html">Medicamentos</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="Contatos.html">Contato</a>
+        </nav>
+        <div class="icons">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+            <div class="cart-icon"><i class="fas fa-cart-arrow-down"></i></div>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="search-from">
+            <input type="search" name="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <style>
+            header {
+                background-color: #3dd3cb;
+                color: black;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h1 {
+                margin-top: 10rem;
+            }
+
+            .container {
+                width: 80vw;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            h2 {
+                color: black;
+            }
+
+            /* Shopping Cart Styles */
+            .cart {
+                margin-top: 20px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .cart table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .cart th,
+            .cart td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+            }
+
+            /* Payment Methods Styles */
+            .payment-methods {
+                margin-top: 20px;
+            }
+
+            .payment-method {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .payment-method label {
+                flex: 1;
+            }
+
+            /* Submit Button Style */
+            .checkout-button {
+                background-color: black;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .checkout-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+        </header>
+
+        <header>
+            <h1>Checkout - Payment</h1>
+        </header>
+        <heade>
+        <div class="container">
+            <h2>Shopping Cart</h2>
+            <div class="cart">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <!-- Add more products as needed -->
+                </table>
+            </div>
+            </heade>
+            <header>
+                <h2>Payment Methods</h2>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <input type="radio" id="pix" name="payment-method" value="pix">
+                        <label for="pix">Pix</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+                        <label for="debit-card">Debit Card</label>
+                    </div>
+                </div>
+
+                <button class="checkout-button" ><a href="login.html">prosseguir para pagamento</a></button>
+        </div>
+    </header>
+    <!--footer-->
+    <footer class="footer">
+        <div class="social-midia">
+            <a href="https://www.facebook.com/profile.php?id=61551637481261" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/drogaria.gabriela/" class="fab fa-instagram"></a>
+            <a href="https://twitter.com/DG_farmacia" class="fab fa-twitter"></a>
+            <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="medicamentos.html">Medicamentos</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="contatos.html">Contato</a>
+        </div>
+        <div class="credits">
+            Copyright &copy; 2023 - Todos os direitos reservados | Desenvolvido por:GRUPO C <Grupo-C>.
+        </div>links
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1733071-OUXAG12CEHK50WIW/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+    </header>
+</body>
+
+</html>

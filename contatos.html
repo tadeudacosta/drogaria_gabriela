@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a80cb970b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:400&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="assets/2.jpg" type="img/x-icon">
+    <title>Drogaria Gabriela</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo"><img src="assets/2.jpg"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="medicamentos.html">Medicamentos</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+        <div class="icons">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+            <div class="cart-icon"><i class="fas fa-cart-arrow-down"></i></div>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="search-from">
+            <input type="search" name="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-items-container">
+            <!--firts Item-->
+            <style>
+                header {
+                    background-color: #3dd3cb;
+                    color: black;
+                    text-align: center;
+                    padding: 30px;
+                }
+
+                h1 {
+                    margin-top: 10rem;
+                }
+
+                .container {
+                    width: 70vw;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
+
+                h2 {
+                    color: #007bff;
+                }
+
+                p {
+                    line-height: 1.6;
+                }
+
+                form {
+                    margin-top: 40px;
+                }
+
+                label {
+                    font-weight: bold;
+                }
+
+                input[type="text"],
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                input[type="submit"] {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+    </header>
+    <header>
+        <p>
+        <h1>Contatos</h1>
+        </p>
+    </header>
+
+    <div class="container">
+        <h2>Blood Pressure</h2>
+        <!-- Content about blood pressure here -->
+
+        <h2>Medications</h2>
+        <!-- Content about medications here -->
+
+        <h2>Glucose Testing</h2>
+        <!-- Content about glucose testing here -->
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further assistance, please feel free to contact us using the form
+            below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <div class="social-midia">
+            <a href="https://www.facebook.com/profile.php?id=61551637481261" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/drogaria.gabriela/" class="fab fa-instagram"></a>
+            <a href="https://twitter.com/DG_farmacia" class="fab fa-twitter"></a>
+            <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="index.html">Medicamentos</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="contatos.html">Contato</a>
+        </div>
+        <div class="credits">
+            Copyright &copy; 2023 - Todos os direitos reservados | Desenvolvido por:GRUPO C <Grupo-C>.
+        </div>links
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1733071-OUXAG12CEHK50WIW/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+    </script>
+    </header>
+</body>
+
+</html>
